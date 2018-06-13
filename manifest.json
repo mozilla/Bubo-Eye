@@ -1,0 +1,18 @@
+{
+
+  "manifest_version": 1,
+  "name": "Image_A11y",
+  "version": "1.0",
+
+  "description": "OCR scan web image text to make accessible for screeen readers",
+
+  "icons":
+
+  "content_scripts": [
+    {
+      "matches": ["*://*./*"],
+      "js": ["tesseract.js"]
+    }
+  ]
+
+}
