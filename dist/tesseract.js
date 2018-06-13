@@ -207,12 +207,12 @@ module.exports={
     "browserify": "^13.1.0",
     "envify": "^3.4.1",
     "http-server": "^0.9.0",
-    "isomorphic-fetch": "^2.2.1",
     "pako": "^1.0.3",
     "watchify": "^3.7.0"
   },
   "dependencies": {
     "file-type": "^3.8.0",
+    "isomorphic-fetch": "^2.2.1",
     "is-url": "^1.2.2",
     "jpeg-js": "^0.2.0",
     "level-js": "^2.2.4",
