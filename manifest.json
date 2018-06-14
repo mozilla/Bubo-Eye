@@ -10,8 +10,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*./*"],
-      "js": ["tesseract.js"]
+      "matches": ["*://*/*"],
+      "js": ["tesseract.dev.js"]
     }
   ]
 
