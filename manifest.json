@@ -1,17 +1,25 @@
 {
 
-  "manifest_version": 1,
-  "name": "Image_A11y",
+  "manifest_version": 2,
+  "name": "Image_A11y Estension",
   "version": "1.0",
 
-  "description": "OCR scan web image text to make accessible for screeen readers",
+  "description": "Run OCR function on page images to scan text, add it to the DOM
+  and improve web accessibility",
 
-  "icons":
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "Image A11y"
+  },
 
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
-      "js": ["tesseract.dev.js"]
+      "matches": ["*://*.*/*"],
+      "js": ["tesseract.js/ocr_images.js",
+      "tesseract.js/dist/tesseract.dev.js"]
     }
   ]
 
