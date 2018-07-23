@@ -1,26 +1,26 @@
 {
-
   "manifest_version": 2,
   "name": "Image_A11y Extension",
   "version": "1.0",
-
-  "description": "Run OCR function on images to scan text, add it to the DOM
-  for screen readers",
-
+  "description": "Run OCR function on images to scan text, add it to the DOM for screen readers",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "/icons/border-48.png"
   },
   "browser_action": {
-    "default_icon": "icons/border-48.png",
+    "default_icon": "./icons/border-48.png",
     "default_title": "Image A11y"
   },
-
-  "content_scripts": [
-    {
-      "matches": ["*://*.*/*"],
-      "js": ["./dist/tesseract.js",
-      "./dist/ocr_images.js"]
-    }
-  ]
-
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["background.js", "./dist/tesseract.js"]
+  }
+  // "content_scripts": [
+  //   {
+  //     "matches": ["*://*/*"],
+  //     "js": [
+  //       "./dist/tesseract.js",
+  //       "./dist/ocr_images.js"
+  //     ]
+  //   }
+  // ]
 }
