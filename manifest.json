@@ -10,18 +10,9 @@
     "default_icon": "./icons/border-48.png",
     "default_title": "Image A11y"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval' blob: https://cdn.rawgit.com; object-src 'self' blob:;",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self' blob:;",
   "permissions": ["contextMenus", "<all_urls>"],
   "background": {
     "scripts": ["dist/tesseract.js", "background.js"]
   }
-  // "content_scripts": [
-  //   {
-  //     "matches": ["*://*/*"],
-  //     "js": [
-  //       "./dist/tesseract.js",
-  //       "./dist/ocr_images.js"
-  //     ]
-  //   }
-  // ]
 }
