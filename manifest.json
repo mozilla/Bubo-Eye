@@ -4,15 +4,21 @@
   "version": "1.0",
   "description": "Run OCR function on images to scan text, add it to the DOM for screen readers",
   "icons": {
-    "48": "/icons/border-48.png"
+    "48": "./icons/a11y_icon.png"
   },
   "browser_action": {
-    "default_icon": "./icons/border-48.png",
+    "default_icon": "./icons/a11y_icon.png",
     "default_title": "Image A11y"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self' blob:;",
   "permissions": ["contextMenus", "<all_urls>"],
   "background": {
     "scripts": ["dist/tesseract.js", "background.js"]
+  },
+  "content_scripts": [
+  {
+    "matches": ["*://*/*"],
+    "js": ["content.js"]
   }
+]
 }
