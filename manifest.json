@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Image_A11y Extension",
+  "name": "Image A11y Extension",
   "version": "1.0",
-  "description": "Run OCR function on images to scan text, add it to the DOM for screen readers",
+  "description": "Scan text on images to add it to the DOM for screen reader access.",
   "icons": {
     "48": "./icons/a11y_icon.png"
   },
