@@ -1,7 +1,7 @@
-const myPort = browser.runtime.connect({name:"content-port"}); //connection to background.js
+const myPort = browser.runtime.connect({name:"content-port"}); // Connection to background.js
 
-myPort.onMessage.addListener((message) => {  // listener for message from background script
-  //if image repeats in page, text will populate in all images.
+myPort.onMessage.addListener((message) => {  // Listener for message from background script.
+  // If image repeats in page, text will populate in all images.
   let images = document.querySelectorAll(`img[src="${message.srcUrl}"]`);
 
   for(let image of images){
