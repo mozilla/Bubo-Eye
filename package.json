@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hamletv/image_a11y_extension#readme",
   "dependencies": {
-    "tesseract.js": "~1.0.10"
+    "tesseract.js": "~1.0.10",
+    "web-ext": "^2.8.0"
   }
 }
