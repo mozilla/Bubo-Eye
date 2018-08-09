@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Image A11y Extension",
+  "name": "Bubo Eye Extension",
   "version": "1.0",
   "description": "Scan text on images to add it to the DOM for screen reader access.",
   "icons": {
@@ -8,7 +8,7 @@
   },
   "browser_action": {
     "default_icon": "./icons/a11y_icon.png",
-    "default_title": "Image A11y"
+    "default_title": "Bubo Eye"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self' blob:;",
   "permissions": ["contextMenus", "<all_urls>"],
