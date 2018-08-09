@@ -1,5 +1,5 @@
 {
-  "name": "image-accessibility-extension",
+  "name": "Bubo Eye",
   "version": "1.0.0",
   "description": "Firefox extension that uses OCR to read text in images and add alt text",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hamletv/image_a11y_extension.git"
+    "url": "git+https://github.com/hamletv/Bubo-Eye.git"
   },
   "author": "Hamlet Villa",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/hamletv/image_a11y_extension/issues"
+    "url": "https://github.com/hamletv/Bubo-Eye/issues"
   },
-  "homepage": "https://github.com/hamletv/image_a11y_extension#readme",
+  "homepage": "https://github.com/hamletv/Bubo-Eye#readme",
   "dependencies": {
     "tesseract.js": "~1.0.10"
   },

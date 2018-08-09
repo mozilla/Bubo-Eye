@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Bubo Eye Extension",
+  "name": "Bubo Eye",
   "version": "1.0",
   "description": "Scan text on images to add it to the DOM for screen reader access.",
   "icons": {
