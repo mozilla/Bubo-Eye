@@ -1,4 +1,3 @@
-
 let portFromContent;
 
 browser.runtime.onConnect.addListener(function(p){  // Establish connection to content script.
@@ -14,7 +13,7 @@ browser.contextMenus.create({       // Context menu - right click on-demand func
   id: "discover-image-text",
   title: "Discover Image Text",     // browser.i18n.getMessage("contextMenuItemDiscoverImageText"),
   contexts: ["image"],
-  onclick: info => {
+  onclick: info => {                // info: image info. if so can we check if alt attr present?
     fetch(info.srcUrl)
       .then(response => response.blob())   // Image data sent as blob.
       .then(blob => {

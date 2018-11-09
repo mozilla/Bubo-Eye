@@ -1,0 +1,16 @@
+{
+  "extensionName": {
+    "message": "Bubo Eye",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Scan text on images to add it to the DOM for screen reader access.",
+    "description": "Description of the extension."
+  },
+
+  "messageContent": {
+    "message": "Possible text: ",
+    "description": "Tells user of possible discovered text."
+  }
+}
