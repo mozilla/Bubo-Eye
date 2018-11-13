@@ -8,8 +8,10 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
   let startAltMsg = browser.i18n.getMessage("messageContent"); //name of message, specified in messages.json file in _locales
 
   for(let image of images){
+    image.setAttribute("aria-busy", "true");
     image.setAttribute("aria-live", "polite");
     image.setAttribute("alt", startAltMsg + message.result.text);
+    image.setAttribute("aria-busy", "false");
   }
 
 });
