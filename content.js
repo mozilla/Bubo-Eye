@@ -7,7 +7,7 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
 
   for(let image of images){
     image.setAttribute("alt", browser.i18n.getMessage("messageContent",
-    message.result.text));
+      message.result.text));
   }
 
 });
