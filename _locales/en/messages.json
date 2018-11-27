@@ -5,12 +5,24 @@
   },
 
   "extensionDescription": {
-    "message": "Scan text on images to add it to the DOM for screen reader access.",
+    "message": "Accessibility extension that scans web images text and passes it to the DOM for screen reader user",
     "description": "Description of the extension."
   },
 
+  "notificationTitle": {
+    "message": "Discover Image Text",
+    "description": "Clickable menu item title that starts scanning process."
+  },
+
   "messageContent": {
-    "message": "Possible text: ",
-    "description": "Tells user of possible discovered text."
-  }
+    "message": "Possible text: $TEXT$.",
+    "description": "Tells user of possible discovered text.",
+    "placeholders": {
+      "text": {
+        "content": "$1",
+        "example": "Improving web accessibility"
+      }
+    }
+  },
+
 }
