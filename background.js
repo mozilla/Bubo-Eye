@@ -1,4 +1,3 @@
-
 let portFromContent;
 
 browser.runtime.onConnect.addListener(function(p){  // Establish connection to content script.

@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Bubo Eye",
+  "name": "__MSG_extensionName__",
   "version": "1.0",
-  "description": "Scan text on images to add it to the DOM for screen reader access.",
+  "description": "__MSG_extensionDescription__",
   "icons": {
     "48": "./icons/a11y_icon.png"
   },
@@ -20,5 +20,6 @@
     "matches": ["*://*/*"],
     "js": ["content.js"]
   }
-]
+],
+  "default_locale": "en"
 }
