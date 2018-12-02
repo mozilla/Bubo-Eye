@@ -12,5 +12,10 @@
   "messageContent": {
     "message": "Possible text: ",
     "description": "Tells user of possible discovered text."
+  },
+
+  "confidenceLocalized": {
+    "message": "Confidence percentage: ",
+    "description": "Gives user confidence percentage of scanning."
   }
 }
