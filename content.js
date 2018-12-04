@@ -5,24 +5,22 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
   // If image repeats in page, text will populate in all images.
   let images = document.querySelectorAll(`img[src="${message.srcUrl}"]`);
 
-  let startAltMsg = browser.i18n.getMessage("messageContent"); //name of message, specified in messages.json file in _locales
+  function confidenceHiddenNode(){
+    let confidenceNode = document.createElement('p');
+    confidenceNode.id = "confidence";
+    confidenceNode.type = "hidden";
+
+    confidenceNode.textContent = browser.i18n.getMessage("confidenceLocalized") + message.result.confidence + "%";
+    document.body.appendChild(confidenceNode);
+  }
 
   for(let image of images){
-
-    function createHiddenNode(){
-      let hiddenNode = document.createElement('p');
-      hiddenNode.id = "confidence";
-      hiddenNode.type = "hidden";
-
-      hiddenNode.textContent = browser.i18n.getMessage("confidenceLocalized") + message.result.confidence + "%";
-      document.body.appendChild(hiddenNode);
-    }
 
     image.setAttribute("aria-busy", "true");
     image.setAttribute("aria-live", "polite");
     image.setAttribute("aria-describedby", "confidence");
-    image.setAttribute("alt", startAltMsg + message.result.text);
-    createHiddenNode();
+    image.setAttribute("alt", browser.i18n.getMessage("messageContent") + message.result.text);
+    confidenceHiddenNode();
     image.setAttribute("aria-busy", "false");
   }
 
