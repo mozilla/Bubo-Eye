@@ -25,8 +25,4 @@
     }
   },
 
-  "confidenceLocalized": {
-    "message": "Confidence percentage: ",
-    "description": "Gives user confidence percentage of scanning."
-  }
 }
