@@ -18,5 +18,4 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
     image.setAttribute("aria-describedby", "a11yElem");
     resultFunction();
   }
-
 });
