@@ -15,13 +15,8 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
   }
 
   for(let image of images){
-
-    image.setAttribute("aria-busy", "true");
-    image.setAttribute("aria-live", "polite");
-    image.setAttribute("aria-describedby", "confidence");
-    image.setAttribute("alt", browser.i18n.getMessage("messageContent") + message.result.text);
-    confidenceHiddenNode();
-    image.setAttribute("aria-busy", "false");
+    image.setAttribute("alt", browser.i18n.getMessage("messageContent",
+      message.result.text));
   }
 
 });
