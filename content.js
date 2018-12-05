@@ -14,9 +14,18 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
     resultElement.setAttribute("aria-live", "polite");
   }
 
+  function confidenceHiddenNode(){
+    let confidenceNode = document.createElement('p');
+    confidenceNode.id = "confidence";
+    confidenceNode.type = "hidden";
+    confidenceNode.textContent = browser.i18n.getMessage("confidenceLocalized") + message.result.confidence + "%";
+    document.body.appendChild(confidenceNode);
+  }
+
   for(let image of images){
     image.setAttribute("aria-describedby", "a11yElem");
     resultFunction();
+    confidenceHiddenNode();
   }
 
 });
