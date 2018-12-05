@@ -7,11 +7,11 @@ myPort.onMessage.addListener((message) => {  // Listener for message from backgr
 
   function resultFunction(){
     let resultElement = document.createElement("p");
-    resultElement.id = "a11yElem";
-    resultElement.style.display = "none";
     document.body.appendChild(resultElement);
-    resultElement.textContent = browser.i18n.getMessage("messageContent") + message.result.text;
+    resultElement.id = "a11yElem";
+    resultElement.style.opacity = 0;
     resultElement.setAttribute("aria-live", "polite");
+    resultElement.textContent = browser.i18n.getMessage("messageContent") + message.result.text;
   }
 
   for(let image of images){
